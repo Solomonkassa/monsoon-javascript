@@ -114,3 +114,111 @@ console.log(fullString);
 // Use **repeat()** method to print 30 Days Of JavaScript 2 times
 
 console.log(challenege.repeat(2));
+
+// Level 2
+
+// 1.
+
+console.log('The quote \'There is no exercise better for the heart than reaching down and lifting people up.\' by John Holmes teaches us to help one another.')
+
+// 2.
+
+console.log(' \"Love is not patronizing and charity isn\'t about pity, it is about love. Charity and love are the same -- with charity you give love, so don\'t just give money but reach out your hand instead.\" ')
+
+// Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
+
+let number = 10;
+
+console.log(number);
+
+// Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
+
+let numberTwo = parseFloat('9.8');
+
+console.log(numberTwo);
+
+console.log(Math.ceil(numberTwo));
+
+// Check if 'on' is found in both python and jargon
+
+let s1 = 'Python'
+let s2 = 'jargon'
+
+console.log(s1.includes('on'));
+console.log(s2.includes('on'));
+
+console.log(s1.match(/on/gi));
+console.log(s2.match(/on/gi));
+
+// I hope this course is not full of jargon. Check if jargon is in the sentence.
+
+let stringThree = 'I hope this course is not full of jargon. Check if jargon is in the sentence.'
+
+console.log(stringThree.includes('jargon'));
+console.log(stringThree.match(/jargon/gi));
+
+// Generate a random number between 0 and 100 inclusively.
+
+randomNumber = Math.floor(Math.random() * 101);
+
+console.log(randomNumber);
+
+
+// Generate a random number between 50 and 100 inclusively.
+
+
+
+// Generate a random number between 0 and 255 inclusively.
+
+randomNumber = Math.floor(Math.random() * 256);
+
+console.log(randomNumber);
+
+// Access the 'JavaScript' string characters using a random number.
+
+
+// Use console.log() and escape characters to print the following pattern.
+
+console.log(' 1 1 1 1 1 \n 2 1 2 4 8 \n 3 1 3 9 27 \n 4 1 4 16 64 \n 5 1 5 25 125 ')
+
+// Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction'
+
+
+let stringFour = 'You cannot end a sentence with because because because is a conjunction'
+
+console.log(stringFour.lastIndexOf('e'));
+
+
+console.log(stringFour.substring(31, 54));
+
+// 'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
+
+let love = 'Love is the best thing in this world. Some found their love and some are still looking for their love.';
+
+lovePattern = /Love/gi
+
+console.log(love.match(lovePattern));
+
+// Use match() to count the number of all because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+
+console.log(stringFour.match(/because/gi));
+
+// Clean the following text and find the most frequent word (hint, use replace and regular expressions).
+
+const sentenceTwo = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+
+
+
+// Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+
+let income = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.';
+
+let incomeRegex = /\d+/g;
+
+incomeArray = income.match(incomeRegex);
+
+console.log(incomeArray)
+
+let totalIncome = parseInt(incomeArray[0]) + parseInt(incomeArray[1]) + parseInt(incomeArray[2]);
+
+console.log(totalIncome);
