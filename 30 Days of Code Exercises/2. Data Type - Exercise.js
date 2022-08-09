@@ -166,6 +166,9 @@ console.log(randomNumber);
 
 // Generate a random number between 50 and 100 inclusively.
 
+randomNumber = Math.floor(Math.random() * (100 - 50 + 1)) + 50;
+console.log('Here comes the random number between 50 and 100');
+console.log(randomNumber);
 
 
 // Generate a random number between 0 and 255 inclusively.
@@ -177,12 +180,12 @@ console.log(randomNumber);
 // Access the 'JavaScript' string characters using a random number.
 
 
+
 // Use console.log() and escape characters to print the following pattern.
 
 console.log(' 1 1 1 1 1 \n 2 1 2 4 8 \n 3 1 3 9 27 \n 4 1 4 16 64 \n 5 1 5 25 125 ')
 
 // Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction'
-
 
 let stringFour = 'You cannot end a sentence with because because because is a conjunction'
 
