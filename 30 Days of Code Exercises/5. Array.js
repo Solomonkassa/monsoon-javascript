@@ -77,12 +77,14 @@ const countries = [
 // }
 
 
+indexOfEithiopia = countries.indexOf('Eithiopia')
 check = countries.includes('Eithiopia')
 
-if (check)
-    console.log('Ethiopia is Present')
-    else {
-        countries.push('Eithiopia')
+if (indexOfEithiopia === -1) {
+  console.log('Ethiopia is not Present')
+
+} else {
+  console.log('Eithiopia is present')
 }
 
 console.log(countries);
@@ -97,4 +99,6 @@ console.log(fullStack)
 const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 
 console.log(ages.sort())
+
+
 
